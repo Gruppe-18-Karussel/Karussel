@@ -2,15 +2,75 @@
 
 ---
 <div class="header">
-    <img src="logokarrusel.jpg" alt="Logo" class="logo">
-    <li><a href="">Home</a></li>
-    <li><a href="">Ticket</a></li>
-    <li><a href="">Program</a></li>
+  <img src="Logo_Desktop.svg" alt="Logo" class="logo">
+  
+  <nav>
+    <ul>
+      <li>
+        <a href="/ticket" class="ticket-btn">
+          <img src="Ticket knap.svg" alt="Ticket Icon" class="ticket-icon">
+        </a>
+      </li>
+      <li><a href="/" class="menu-item active">Home</a></li>
+      <li><a href="/ticket" class="menu-item">Ticket</a></li>
+      <li><a href="/program" class="menu-item">Program</a></li>
+    </ul>
+  </nav>
 </div>
 
+
 <style>
-   header {
-    color: white;
-   }
-   
+  .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Gennemsigtig sort baggrund */
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+}
+
+.menu-item {
+  text-decoration: none;
+  padding: 12px 80px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: white;
+}
+
+.active {
+  background-color: white;
+  color: black;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center; /* Sørger for, at alt bliver centreret lodret */
+  gap: 20px;
+}
+
+.ticket-btn {
+  display: inline-block;
+}
+
+.ticket-icon {
+  width: 40px; /* Juster størrelsen på ikonet efter behov */
+  height: auto;
+  vertical-align: middle; /* Sørger for, at ikonet justeres lodret korrekt */
+}
+
 </style>
