@@ -1,0 +1,76 @@
+---
+// Du kan importere yderligere funktioner eller scripts her, hvis nødvendigt
+---
+
+<div class="newsletter-container">
+    <h2>Sign up for the newsletter</h2>
+    <div class="newsletter-input">
+      <input type="email" placeholder="Enter email:" />
+      <button class="submit-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+          <path d="M2 12L18 12L14 8L15.41 6.59L21.82 13L15.41 19.41L14 18L18 14L2 14L2 12Z"/>
+        </svg>
+      </button>   
+    </div>
+  </div>
+  
+
+<style>
+    .newsletter-container {
+      background-color: #ED3A72; /* Lyserød baggrund */
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    .newsletter-container h2 {
+      color: white;
+      font-family: "itc-avant-garde-gothic-pro", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 25px;
+      margin-bottom: 40px;
+    }
+  
+    .newsletter-input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    input[type="email"] {
+      padding: 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      width: 70%;
+      max-width: 400px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+  
+    .submit-btn {
+      background-color: #ED3A72;
+      border: 2px solid white;      
+      padding: 8px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+  
+    .submit-btn svg {
+  fill: white; /* Hvid pil */
+}
+
+
+.submit-btn:hover {
+  background-color: white;
+}
+
+.submit-btn:hover svg {
+    fill: #ED3A72;
+}
+  </style>
+  
